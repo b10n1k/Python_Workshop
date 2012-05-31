@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+#Filename: Person.py
+class Person:
+'''This is the super class of Person'''
+    def __init__(self,name):
+        self.name=name
+
+    def introduce(self):
+        print('My name is',self.name)
