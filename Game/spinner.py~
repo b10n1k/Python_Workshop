@@ -1,0 +1,34 @@
+import pygame,os,sys,random
+from pygame.locals import *
+
+class Spinner:
+	
+	def __init__(self):
+		pygame.init()
+		self.orange=pygame.image.load("orange.jpg")
+		self.apple=pygame.image.load("apple.jpg")
+		self.lemon=pygame.image.load("lemon.jpg")
+		self.bingo=pygame.image.load("bingo.jpg")
+		self.icons=[self.orange, self.apple, self.lemon, self.bingo]
+		self.interface=pygame.display.set_mode((300, 400))
+		self.red = (255, 0, 0)
+		self.green = (0, 255, 0)
+		self.blue = (0, 0, 255)
+		interface.fill(self.red)
+		self.spin()
+		self.display()
+	
+	def spin(self):
+		pass
+	
+	def display(self):
+		while True:
+			for event in pygame.events.get():
+				if event.type == QUIT:
+					pygame.quit()
+					sys.exit()
+				pygame.display.update()
+
+	
+Spinner()
+
